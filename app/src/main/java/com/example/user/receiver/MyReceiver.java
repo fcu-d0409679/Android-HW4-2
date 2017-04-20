@@ -27,7 +27,6 @@ public class MyReceiver extends BroadcastReceiver {
 
 
         String name = intent.getStringExtra("Name");
-
         Intent newIntent = new Intent();
         newIntent.setClass(context,MainActivity.class);
         newIntent.putExtra("Name",name);
