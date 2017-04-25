@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String hello = "Hello";
         if(intent != null){
-            String name = intent.getStringExtra("Name");
+            String name = intent.getStringExtra("Name_Key");//從通關密語我們可以使用Sender中使用此通關密語的參數
             if(name != null){
                 hello = hello + name;
             }

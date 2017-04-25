@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <receiver android:name=".MyReceiver">
             <intent-filter>
                 <action android:name="lincyu.Notification"/>
@@ -29,7 +28,11 @@
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="lincyu.NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
